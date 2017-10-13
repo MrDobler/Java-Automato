@@ -6,7 +6,8 @@ public class Automato  {
 	public static void main(String[] args) {
 		String resposta;
 		
-		while(true){
+		while(true)
+		{
 			Scanner input = new Scanner(System.in);
 			System.out.println("Informa a palavra: ");
 			String palavraOriginal = input.nextLine();
@@ -27,8 +28,10 @@ public class Automato  {
 			}else {
 				System.out.println("Palavra não aceita!");
 			}
+			
 			System.out.println("\ncontinuar?");
 			System.out.println("__________________________");
+			
 			
 			resposta = input.nextLine();
 			if (resposta.equals("n")) {
