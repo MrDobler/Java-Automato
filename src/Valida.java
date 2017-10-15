@@ -21,7 +21,7 @@ public class Valida {
 			return true;
 		}
 	}
-	
+
 	void estadoFinal(int result, String palavra) 
 	{
 		if(result == 3 || result == 4) {
@@ -29,9 +29,6 @@ public class Valida {
 			System.out.println("Estado final: q"+result);
 		}else {
 			System.out.println("Palavra \""+palavra+"\" não aceita!");
-			System.out.println("Último estado lido: q"+result);
 		}
 	}
-	
-	
 }

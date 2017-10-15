@@ -27,14 +27,14 @@ public class LoopPrincipal {
 				int resultado = transicao.funTransicao(palavraArray, estado);
 				teste.estadoFinal(resultado, palavraOriginal);
 				
-				System.out.println("\nPressione \"n\" ou \"N\" para sair ou Enter para continuar.");
+				System.out.println("\nPressione \"e\" ou \"E\" para sair ou Enter para continuar.");
 				System.out.println("_______________________________________________");
 				
 				
 				resposta = input.nextLine();
-				if (resposta.equals("n") || resposta.equals("N")) {
+				if (resposta.equals("e") || resposta.equals("E")) {
 					System.out.println("Programa finalizado!");
-					break;
+					System.exit(0);
 				}	
 			
 			}
