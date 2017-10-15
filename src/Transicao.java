@@ -1,8 +1,8 @@
-
 public class Transicao {
 	
 	Valida testa = new Valida();
 
+	int guardaEstado;
 	int x;
 	int funTransicao(char[] palavra, int estado) 
 	{
@@ -17,51 +17,51 @@ public class Transicao {
 				{
 					case 0:
 						if (palavra[i] == 'a')
-							estado = 2;
+							estado = guardaEstado = 2;
 						else 
-							estado = 1;
+							estado = guardaEstado = 1;
 						break;
 						
 					case 1:
 						if (palavra[i] == 'a')
-							estado = 1;
+							estado = guardaEstado = 1;
 						else 
-							estado = 0;
+							estado = guardaEstado = 0;
 						break;
 						
 					case 2:
 						if (palavra[i] == 'a')
-							estado = 4;
+							estado = guardaEstado = 4;
 						else 
-							estado = 3;
+							estado = guardaEstado = 3;
 						break;
 						
 					case 3:
 						if (palavra[i] == 'a')
-							estado = 2;
+							estado = guardaEstado = 2;
 						else 
-							estado = 5;
+							estado = guardaEstado = 5;
 						break;
 						
 					case 4:
 						if (palavra[i] == 'a')
-							estado = 5;
+							estado = guardaEstado = 5;
 						else 
-							estado = 2;
+							estado = guardaEstado = 2;
 						break;
 						
 					case 5:
 						if (palavra[i] == 'a')
-							estado = 3;
+							estado = guardaEstado = 3;
 						else 
-							estado = 4;
+							estado = guardaEstado = 4;
 						break;
 				}
 			}
 		}
 		
 		if(x > palavra.length) {
-			return-1;			
+			return guardaEstado;			
 		} else {
 			return estado;			
 		}
