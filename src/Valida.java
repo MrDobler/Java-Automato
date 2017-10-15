@@ -11,7 +11,8 @@ public class Valida {
 		
 	}
 	
-	boolean palavraVazia(String palavra) {
+	boolean palavraVazia(String palavra) 
+	{
 		if(palavra.equals("")) {
 			System.out.println("A palavra não pode estar vazia.");
 			System.out.println("_______________________________________________");
@@ -21,7 +22,8 @@ public class Valida {
 		}
 	}
 	
-	void estadoFinal(int result, String palavra) {
+	void estadoFinal(int result, String palavra) 
+	{
 		if(result == 3 || result == 4) {
 			System.out.println("A palavra \""+palavra+"\" foi aceita");
 			System.out.println("Estado final: q"+result);
