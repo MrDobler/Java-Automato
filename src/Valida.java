@@ -1,14 +1,17 @@
 
-public class Valida {
+public class Valida 
+{
 	int estado = 0;
 	boolean palavraAceita = true;
 	String resultado;
 	
-	void validacao(char[] letras, int stado) {
+	void validacao(char[] letras, int stado) 
+	{
 		
 	
 
-	for (int i = 0; i < letras.length; i++) {
+	for (int i = 0; i < letras.length; i++) 
+	{
 		// Q0
 		switch (estado) {
 
@@ -34,6 +37,7 @@ public class Valida {
 					palavraAceita = false;
 					i = letras.length;
 				}
+				
 				break;
 			// Q2
 			case 2:
@@ -45,6 +49,7 @@ public class Valida {
 					palavraAceita = false;
 					i = letras.length;
 				}
+				
 				break;
 			// Q3
 			case 3:
@@ -56,6 +61,7 @@ public class Valida {
 					palavraAceita = false;
 					i = letras.length;
 				}
+				
 				break;
 			// Q4
 			case 4:
@@ -67,6 +73,7 @@ public class Valida {
 					palavraAceita = false;
 					i = letras.length;
 				}
+				
 				break;
 			// Q5
 			case 5:
@@ -78,20 +85,20 @@ public class Valida {
 					palavraAceita = false;
 					i = letras.length;
 				}
+				
 				break;
 
 			}
 		}
 	
-	if (palavraAceita == true && (estado == 3  || estado == 4))
-		resultado = " foi aceita pelo automato";
-		
-		
-	else
-		resultado =" não foi aceita pelo autômato";	
-		
+		if (palavraAceita == true && (estado == 3  || estado == 4))
+			resultado = " foi aceita pelo automato";	
+		else
+			resultado =" não foi aceita pelo autômato";	
 	}
-	int getEstado(){
+	
+	
+	int getEstado() {
 		return estado;
 	}
 	

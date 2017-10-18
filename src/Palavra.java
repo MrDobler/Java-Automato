@@ -1,14 +1,18 @@
 import java.util.Scanner;
 
-public class Palavra {
+public class Palavra
+{
 
-	public static void main(String[] args) {
+	public static void main(String[] args) 
+	{
 		String loop="sim";
 		String palavra;
 		char[] letras;
 		int estado = 0;
-		while(!loop.contains("nao") ) {
+		while(!loop.contains("nao") ) 
+		{
 			
+			@SuppressWarnings("resource")
 			Scanner input = new Scanner(System.in);
 		
 			System.out.println("informe a palavra a ser validada: ");
@@ -19,12 +23,11 @@ public class Palavra {
 			valida.validacao(letras, estado);
 		
 			System.out.println("A palavra: \""+palavra+"\""+valida.getResultado());
-			System.out.println("Estado final: Q"+valida.getEstado());
+			System.out.println("Estado final: q"+valida.getEstado());
 		
 			System.out.println("\nContinuar? sim ou nao");
 			loop = input.nextLine();
-			
-
+	
 		}
 	}
 
