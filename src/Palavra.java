@@ -20,7 +20,7 @@ public class Palavra
 			letras = palavra.toCharArray();
 			Valida valida = new Valida();
 		
-			valida.validacao(letras, estado);
+			valida.validacao(letras);
 		
 			System.out.println("A palavra: \""+palavra+"\""+valida.getResultado());
 			System.out.println("Estado final: q"+valida.getEstado());

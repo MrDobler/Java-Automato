@@ -5,7 +5,7 @@ public class Valida
 	boolean palavraAceita = true;
 	String resultado;
 	
-	void validacao(char[] letras, int stado) 
+	void validacao(char[] letras) 
 	{
 		
 	
@@ -91,7 +91,7 @@ public class Valida
 			}
 		}
 	
-		if (palavraAceita == true && (estado == 3  || estado == 4))
+		if (palavraAceita && (estado == 3  || estado == 4))
 			resultado = " foi aceita pelo automato";	
 		else
 			resultado =" não foi aceita pelo autômato";	
