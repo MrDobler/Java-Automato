@@ -1,21 +1,12 @@
 
-<<<<<<< HEAD
-public class Valida {
-	private int estado = 0;
-=======
 public class Valida 
 {
 	int estado = 0;
->>>>>>> 763dc41a8cc5fa024235b87a38471b7678fcb45e
 	boolean palavraAceita = true;
-	private String resultado;
+	String resultado;
 	
-<<<<<<< HEAD
-	void validacao(char[] letras) {
-=======
-	void validacao(char[] letras, int stado) 
+	void validacao(char[] letras) 
 	{
->>>>>>> 763dc41a8cc5fa024235b87a38471b7678fcb45e
 		
 	
 
@@ -100,20 +91,10 @@ public class Valida
 			}
 		}
 	
-<<<<<<< HEAD
-	if (palavraAceita && (estado == 3  || estado == 4))
-		resultado = " foi aceita pelo automato";
-		
-		
-	else
-		resultado =" não foi aceita pelo autômato";	
-		
-=======
-		if (palavraAceita == true && (estado == 3  || estado == 4))
+		if (palavraAceita && (estado == 3  || estado == 4))
 			resultado = " foi aceita pelo automato";	
 		else
 			resultado =" não foi aceita pelo autômato";	
->>>>>>> 763dc41a8cc5fa024235b87a38471b7678fcb45e
 	}
 	
 	
