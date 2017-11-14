@@ -8,7 +8,6 @@ public class Palavra
 		String loop="sim";
 		String palavra;
 		char[] letras;
-		int estado = 0;
 		while(!loop.contains("nao") ) 
 		{
 			
